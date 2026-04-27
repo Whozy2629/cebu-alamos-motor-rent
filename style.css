@@ -863,3 +863,273 @@ footer {
   transform: translateY(-2px);
   box-shadow: 0 18px 38px rgba(31, 78, 168, 0.35);
 }
+
+
+/* UPDATED RATES + DURATION DISCOUNTS */
+.rates-highlight {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 34px;
+}
+
+.rates-highlight div {
+  background: linear-gradient(135deg, #ffffff, #fff7ea);
+  border: 1px solid rgba(242, 140, 27, 0.24);
+  border-radius: 24px;
+  padding: 22px;
+  box-shadow: 0 12px 32px rgba(17, 34, 68, 0.10);
+}
+
+.rates-highlight span,
+.rates-highlight small {
+  display: block;
+}
+
+.rates-highlight span {
+  color: var(--gray);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+.rates-highlight strong {
+  display: block;
+  color: var(--orange-2);
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 1000;
+  line-height: 1.1;
+  margin: 8px 0;
+}
+
+.rates-highlight small {
+  color: var(--blue);
+  font-weight: 800;
+}
+
+.rates-layout-top {
+  margin-bottom: 34px;
+}
+
+.daily-rates-card {
+  align-self: stretch;
+}
+
+.rate-table-heading {
+  padding: 24px 24px 18px;
+  border-bottom: 1px solid #edf0f6;
+  background: linear-gradient(135deg, rgba(31, 78, 168, 0.08), rgba(242, 140, 27, 0.08));
+}
+
+.rate-table-heading h3 {
+  color: var(--blue);
+  font-size: clamp(24px, 3vw, 34px);
+  margin-bottom: 6px;
+  font-weight: 1000;
+}
+
+.rate-table-heading p {
+  color: var(--gray);
+  font-size: 15px;
+}
+
+.centered-heading {
+  text-align: center;
+  border-bottom: none;
+  background: transparent;
+  padding: 0 0 22px;
+}
+
+.full-rates-card,
+.discount-guide-card {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  box-shadow: var(--shadow);
+  padding: 28px;
+  margin-top: 34px;
+  overflow: hidden;
+}
+
+.table-scroll {
+  overflow-x: auto;
+  border-radius: 20px;
+  border: 1px solid #e5eaf4;
+  background: #ffffff;
+}
+
+.duration-rates-table {
+  width: 100%;
+  min-width: 860px;
+  border-collapse: collapse;
+}
+
+.duration-rates-table th {
+  background: var(--blue);
+  color: #ffffff;
+  text-align: left;
+  padding: 18px 16px;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.duration-rates-table td {
+  padding: 17px 16px;
+  border-bottom: 1px solid #edf0f6;
+  color: var(--text);
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.duration-rates-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.duration-rates-table tbody tr:hover {
+  background: #fff8ea;
+}
+
+.duration-rates-table td:first-child {
+  color: var(--blue);
+  font-weight: 900;
+}
+
+.duration-rates-table td:not(:first-child) {
+  font-weight: 900;
+}
+
+.discount-guide-card {
+  background:
+    linear-gradient(135deg, rgba(31, 78, 168, 0.96), rgba(8, 31, 79, 0.98)),
+    url('images/hero-bg.webp') center/cover no-repeat;
+  color: #ffffff;
+}
+
+.discount-guide-card .rate-table-heading h3,
+.discount-guide-card .rate-table-heading p {
+  color: #ffffff;
+}
+
+.discount-guide-card .eyebrow.center {
+  color: #ffd89a;
+}
+
+.discount-guide-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 14px;
+}
+
+.discount-guide-item {
+  background: rgba(255, 255, 255, 0.11);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 18px;
+  padding: 18px 14px;
+  min-height: 142px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.discount-guide-item strong,
+.discount-guide-item span,
+.discount-guide-item small {
+  display: block;
+}
+
+.discount-guide-item strong {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.discount-guide-item span {
+  color: #ffd89a;
+  font-weight: 1000;
+  margin-bottom: 7px;
+}
+
+.discount-guide-item small {
+  color: rgba(255, 255, 255, 0.86);
+  line-height: 1.35;
+}
+
+.featured-discount {
+  background: linear-gradient(135deg, var(--orange), var(--orange-2));
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 14px 28px rgba(239, 59, 22, 0.28);
+}
+
+.featured-discount span {
+  color: #ffffff;
+}
+
+.pricing-note-box {
+  margin-top: 34px;
+  background: linear-gradient(135deg, #fff7ea, #ffffff);
+  border: 1px solid rgba(242, 140, 27, 0.28);
+  border-left: 8px solid var(--orange);
+  border-radius: 24px;
+  padding: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 22px;
+  box-shadow: 0 12px 32px rgba(17, 34, 68, 0.10);
+}
+
+.pricing-note-box h3 {
+  color: var(--blue);
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.pricing-note-box p {
+  color: var(--gray);
+}
+
+.pricing-note-btn {
+  display: inline-block;
+  background: var(--blue);
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 15px 24px;
+  font-weight: 1000;
+  white-space: nowrap;
+}
+
+.pricing-note-btn:hover {
+  background: var(--dark-blue);
+}
+
+@media (max-width: 1050px) {
+  .discount-guide-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .rates-highlight {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .full-rates-card,
+  .discount-guide-card {
+    padding: 20px;
+    border-radius: 22px;
+  }
+
+  .discount-guide-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-note-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pricing-note-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

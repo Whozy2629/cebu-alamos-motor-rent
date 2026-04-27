@@ -46,6 +46,8 @@ if (bookingForm) {
     const unit = document.getElementById("selectedUnit").value;
     const date = document.getElementById("rentalDate").value;
     const time = document.getElementById("rentalTime").value;
+    const duration = document.getElementById("rentalDuration")?.value || "";
+    const paymentOption = document.getElementById("paymentOption")?.value || "";
     const message = document.getElementById("message").value.trim();
 
     const subject = encodeURIComponent("Cebu Alamos Booking Request");
@@ -55,6 +57,8 @@ if (bookingForm) {
       `Selected Unit: ${unit}\n` +
       `Preferred Date: ${date || "Not specified"}\n` +
       `Preferred Time: ${time || "Not specified"}\n` +
+      `Rental Duration: ${duration || "Not specified"}\n` +
+      `Payment Option: ${paymentOption || "Not specified"}\n` +
       `Message: ${message || "No additional message"}`
     );
 
